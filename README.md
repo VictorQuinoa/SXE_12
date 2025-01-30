@@ -14,3 +14,11 @@ INSERT into EmpresasFCT (nombre, quierealumnos, numalumnos, fechacontacto) value
 ```
 
 ![](https://github.com/VictorQuinoa/SXE_12/blob/main/2.png?raw=true)
+
+### 3 
+
+```
+Select * from empresasfct order by fechacontacto desc;
+```
+
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/3_12.png?raw=true)
