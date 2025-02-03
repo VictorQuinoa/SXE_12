@@ -22,3 +22,17 @@ Select * from empresasfct order by fechacontacto desc;
 ```
 
 ![](https://github.com/VictorQuinoa/SXE_12/blob/main/3_12.png?raw=true)
+
+### 4
+
+```
+SELECT name AS Nombre, city AS Ciudad, 
+commercial_company_name AS Nombre_Comercial_Empresa
+FROM res_partner 
+WHERE is_company = FALSE 
+AND city = 'Tracy'
+ORDER BY commercial_company_name ASC;
+```
+
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/4.png?raw=true)
+
