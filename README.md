@@ -61,3 +61,13 @@ GROUP BY invoice_partner_display_name
 HAVING COUNT(DISTINCT name) > 2;
 ```
 ![](https://github.com/VictorQuinoa/SXE_12/blob/main/6.png?raw=true)
+
+### 7 
+
+```
+UPDATE res_partner SET  email= 
+REPLACE(email, '@bilbao.example.com', '@bilbao.bizkaia.eus')   
+WHERE email like '%@bilbao.example.com';
+```
+
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/7.png?raw=true)
