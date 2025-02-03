@@ -71,3 +71,16 @@ WHERE email like '%@bilbao.example.com';
 ```
 
 ![](https://github.com/VictorQuinoa/SXE_12/blob/main/7.png?raw=true)
+
+### 8
+
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/READYMAT%20antes.png?raw=true)
+
+```
+DELETE FROM res_partner
+WHERE commercial_company_name = 'Ready Mat' 
+AND is_company = FALSE;
+```
+
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/8.png?raw=true)
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/Despues.png?raw=true)
