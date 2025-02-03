@@ -47,3 +47,17 @@ ORDER BY invoice_date DESC;
 
 ![](https://github.com/VictorQuinoa/SXE_12/blob/main/5.png?raw=true)
 
+### 6 
+
+```
+SELECT 
+    invoice_partner_display_name ,
+    COUNT(DISTINCT name),
+    SUM(DISTINCT amount_untaxed) 
+FROM account_move 
+WHERE move_type = 'out_invoice'  
+AND state = 'posted'
+GROUP BY invoice_partner_display_name
+HAVING COUNT(DISTINCT name) > 2;
+```
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/6.png?raw=true)
