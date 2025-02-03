@@ -36,3 +36,14 @@ ORDER BY commercial_company_name ASC;
 
 ![](https://github.com/VictorQuinoa/SXE_12/blob/main/4.png?raw=true)
 
+### 5
+
+```
+SELECT invoice_partner_display_name, name ,
+invoice_date_due, amount_untaxed 
+FROM account_move WHERE move_type= 'in_refund'
+ORDER BY invoice_date DESC;
+```
+
+![](https://github.com/VictorQuinoa/SXE_12/blob/main/5.png?raw=true)
+
